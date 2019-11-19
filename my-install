@@ -12,6 +12,6 @@ telegram-desktop gparted htop gpick sk1 gimp conky-manager geary
 pantheon-calculator pantheon-music pantheon-videos pantheon-calendar
 pantheon-photos pantheon-code pantheon-screenshot pantheon-terminal
 pantheon-files pantheon-polkit-agent unzip unrar nethogs git xf86-video-amdgpu
-amd-ucode 
+amd-ucode lxmenu-data man-db man-pages
 genfstab -U /mnt >> /mnt/etc/fstab
 
