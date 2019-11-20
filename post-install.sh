@@ -2,8 +2,9 @@
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
-echo "es_MX.UTF-8 UTF-8" > /etc/locale.gen
-echo "es_MX ISO-8859-1" >> /etc/locale.gen
+sed -i 's/# es_MX/es_MX/g' locale.gen
+#echo "es_MX.UTF-8 UTF-8" > /etc/locale.gen
+#echo "es_MX ISO-8859-1" >> /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" > /etc/locale.conf
 echo "KEYMAP=es" > /etc/vconsole.conf
