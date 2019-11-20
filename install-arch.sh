@@ -13,4 +13,7 @@ pacstrap /mnt xorg-server xorg-xinit xorg-xrandr xorg-xkill xf86-input-libinput 
 
 genfstab -U /mnt >> /mnt/etc/fstab
 cp post-install.sh /mnt/root/
+echo "Cambiando a chroot /mnt"
+echo "Conituna ejecutando el script post-install.sh en /roo"
 
+arch-chroot /mnt
