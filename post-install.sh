@@ -7,8 +7,6 @@ echo "es_MX ISO-8859-1" >> /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" > /etc/locale.conf
 echo "KEYMAP=es" > /etc/vconsole.conf
-localectl set-keymap es
-localectl set-x11keymap es
 echo "max" > /etc/hostname
 echo "127.0.0.1		max" >> /etc/hosts
 echo "::1			max" >> /etc/hosts
