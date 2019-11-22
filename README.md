@@ -6,5 +6,5 @@ This script, in the meanwhile, contain almost all the packages of my current ins
 + NetworkManager and applet
 + Openbox, tint2, jgmenu, compton, gmrun, guake
 + Pantheon apps (music, videos, photos, screenshot, code, files)
-+ Firefox, Geary, transmission, qbittorrent
++ Firefox, Geary, qbittorrent
 + VLC 
