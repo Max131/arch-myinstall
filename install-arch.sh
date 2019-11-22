@@ -17,5 +17,6 @@ echo "Cambiando a chroot /mnt"
 echo "Conituna ejecutando el script post-install.sh en /root"
 
 cp -Rf skel /mnt/etc/
+cp -f X/00-keyboard.conf /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
 
 arch-chroot /mnt
