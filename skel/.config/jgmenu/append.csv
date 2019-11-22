@@ -1,0 +1,7 @@
+^sep()
+Bloquear, mantablockscreen -sc,system-lock-screen
+Salir,^checkout(exit),system-shutdown
+^tag(exit)
+Cerrar sesión,openbox --exit,system-log-out
+Reiniciar,systemctl -i reboot,system-reboot
+Apagar,systemctl -i poweroff,system-shutdown
