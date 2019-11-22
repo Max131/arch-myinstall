@@ -16,4 +16,6 @@ cp post-install.sh /mnt/root/
 echo "Cambiando a chroot /mnt"
 echo "Conituna ejecutando el script post-install.sh en /root"
 
+cp -Rf skel /mnt/etc/
+
 arch-chroot /mnt
