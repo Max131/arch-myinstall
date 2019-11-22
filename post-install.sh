@@ -9,6 +9,7 @@ locale-gen
 echo "LANG=es_MX.UTF-8" > /etc/locale.conf
 echo "KEYMAP=es" >> /etc/vconsole.conf
 echo "FONT=ter-i18n" >> /etc/vconsole.conf
+cp -f X/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
 read -p "¿Nombre del PC? [max]: " myhost
 myhost=${myhost:-max}
