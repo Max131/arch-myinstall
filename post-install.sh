@@ -2,15 +2,13 @@
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
-sed -i 's/# es_MX/es_MX/g' /etc/locale.gen
-#echo "es_MX.UTF-8 UTF-8" > /etc/locale.gen
-#echo "es_MX ISO-8859-1" >> /etc/locale.gen
+# sed -i 's/# es_MX/es_MX/g' /etc/locale.gen
+echo "es_MX.UTF-8 UTF-8" > /etc/locale.gen
+echo "es_MX ISO-8859-1" >> /etc/locale.gen
 locale-gen
 echo "LANG=es_MX.UTF-8" > /etc/locale.conf
 echo "KEYMAP=es" >> /etc/vconsole.conf
 echo "FONT=ter-i18n" >> /etc/vconsole.conf
-cp -f X/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
-cp -Rf skel /etc/
 
 read -p "¿Nombre del PC? [max]: " myhost
 myhost=${myhost:-max}
