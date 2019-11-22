@@ -2,7 +2,7 @@
 
 ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime
 hwclock --systohc
-sed -i 's/# es_MX/es_MX/g' locale.gen
+sed -i 's/# es_MX/es_MX/g' /etc/locale.gen
 #echo "es_MX.UTF-8 UTF-8" > /etc/locale.gen
 #echo "es_MX ISO-8859-1" >> /etc/locale.gen
 locale-gen
@@ -18,7 +18,7 @@ echo "127.0.0.1		$myhost" >> /etc/hosts
 echo "::1			$myhost" >> /etc/hosts
 echo "127.0.0.1		$myhost.localdomain		$myhost" >> /etc/hosts
 
-sed -i 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck consolefont/g'
+sed -i 's/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck/HOOKS=(base udev autodetect modconf block filesystems keyboard fsck consolefont/g' /etc/mkinitcpio.conf
 
 mkinitcpio -P
 
