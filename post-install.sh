@@ -48,6 +48,7 @@ echo "EDITOR=vim" >> /etc/environment
 echo "BROWSER=firefox" >> /etc/environment
 
 cat>/etc/xdg/openbox/autostart<<EOF -
+nitrogen --restore &
 tint2 &
 guake &
 nm-applet &
