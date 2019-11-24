@@ -16,7 +16,12 @@ cp post-install.sh /mnt/root/
 echo "Cambiando a chroot /mnt"
 echo "Conituna ejecutando el script post-install.sh en /root"
 
-cp -Rf skel /mnt/etc/
-cp -f X/00-keyboard.conf /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
+cp -Rfv skel /mnt/etc/
+cp -fv X/00-keyboard.conf /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
+
+sed -i 's/# es_MX/es_MX/g' /mnt/etc/locale.gen
+
+sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-gtk-greeter/g' /mnt/etc/lightdm/lightdm.conf
+
 
 arch-chroot /mnt
