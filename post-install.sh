@@ -47,14 +47,7 @@ passwd $myuser
 echo "EDITOR=vim" >> /etc/environment
 echo "BROWSER=firefox" >> /etc/environment
 
-cat>/etc/xdg/openbox/autostart<<EOF -
-nitrogen --restore &
-tint2 &
-guake &
-nm-applet &
-parcellite &
-volumeicon &
-EOF
+sed -i 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers
 
 echo "export XDG_CURRENT_DESKTOP=openbox" >> /etc/xdg/openbox/environment
 sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-gtk-greeter/g' /mnt/etc/lightdm/lightdm.conf
