@@ -14,4 +14,4 @@ This script, in the meanwhile, contain almost all the packages of my current ins
   + Win jgmenu
   + F12 Guake
  
- ![Desktop screenshot](screenshot.png)
+ ![Desktop screenshot](screenshot2.png)
