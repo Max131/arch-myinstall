@@ -1,0 +1,6 @@
+nitrogen --restore &
+tint2 &
+guake &
+nm-applet &
+parcellite &
+volumeicon &
