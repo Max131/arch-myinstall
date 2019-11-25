@@ -1,0 +1,2 @@
+nitrogen --save --set-zoom-fill /usr/share/backgrounds/gnome/Icescape.jpg
+rm -f .xprofile
