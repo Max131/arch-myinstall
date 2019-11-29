@@ -1,0 +1,4 @@
+Navegador,firefox,firefox
+Archivos,io.elementary.files,system-file-manager
+Terminal,io.elementary.terminal,utilities-terminal
+^sep()
