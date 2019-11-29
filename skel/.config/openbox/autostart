@@ -1,6 +1,8 @@
+comtpon &
 nitrogen --restore &
 tint2 &
 guake &
 nm-applet &
 parcellite &
 volumeicon &
+/usr/lib/policykit-1-pantheon/io.elementary.desktop.agent-polkit &
