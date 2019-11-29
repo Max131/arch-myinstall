@@ -43,7 +43,7 @@
                   'Active' - where the active window is -->
   <theme>
     <!-- <cornerRadius menu="yes">4</cornerRadius>-->
-    <name>Arc-Dark</name>
+    <name>Arrondie-Violet</name>
     <titleLayout>NLIMC</titleLayout>
     <!--       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -400,6 +400,21 @@
       </action>
       <action name="MoveToEdge">
         <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="S-C-space">
+      <action name="Execute">
+        <command>synapse -s</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>xbacklight -dec 5</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>xbacklight -inc 5</command>
       </action>
     </keybind>
   </keyboard>
