@@ -1,4 +1,4 @@
-comtpon &
+compton -c -C -f -I 0.02 -O 0.02 -G --dbus &
 nitrogen --restore &
 conky -c .conky/clock &
 tint2 &
@@ -6,4 +6,7 @@ guake &
 nm-applet &
 parcellite &
 volumeicon &
+xcape -e 'Super_L=Alt_L|F1' &
+xcape -e 'Super_R=Alt_L|F1' &
 /usr/lib/policykit-1-pantheon/io.elementary.desktop.agent-polkit &
+# xautolock -time 90 -locker "mantablockscreen -sc" &
