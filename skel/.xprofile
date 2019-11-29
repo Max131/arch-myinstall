@@ -1,2 +1,2 @@
-nitrogen --save --set-zoom-fill /usr/share/backgrounds/gnome/Icescape.jpg
+nitrogen --save --set-zoom-fill /usr/share/wallpapers/conifer-road.jpg
 rm -f .xprofile
