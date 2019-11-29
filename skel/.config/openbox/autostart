@@ -1,5 +1,6 @@
 comtpon &
 nitrogen --restore &
+conky -c .conky/clock
 tint2 &
 guake &
 nm-applet &
