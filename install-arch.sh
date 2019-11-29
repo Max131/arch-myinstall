@@ -4,7 +4,7 @@ timedatectl set-ntp true
 clear
 echo "##### Instalando sistema base #####"
 sleep 2s
-pacstrap /mnt base base-devel linux-zen linux-zen-headers linux-firmware grub os-prober networkmanager vim mlocate sudo zsh zsh-syntax-highlighting pulseaudio pulsemixer alsa-utils unzip unrar nethogs man-db man-pages arch-wiki-lite arch-wiki-docs terminus-font virtualbox-guest-utils virtualbox-guest-dkms xf86-video-vmware
+pacstrap /mnt base base-devel linux-zen linux-zen-headers linux-firmware grub os-prober efibootmgr networkmanager vim mlocate sudo zsh zsh-syntax-highlighting pulseaudio pulsemixer alsa-utils unzip unrar nethogs man-db man-pages arch-wiki-lite arch-wiki-docs terminus-font virtualbox-guest-utils virtualbox-guest-dkms xf86-video-vmware
 
 clear
 echo "##### Instalando X y Openbox #####"
