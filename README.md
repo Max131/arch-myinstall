@@ -1,7 +1,7 @@
 # arch-myinstall
 
 This script, in the meanwhile, contain almost all the packages of my current installation:
-
+First `mount -o remount,size=2G /run/archiso/cowspace`
 + Base: linux-zen kernel, vim, networkmanager
 + Desktop: Openbox, tint2, jgmenu, compton, gmrun, guake, nm-applet, arc theme, elementary icons, volumeicon, parcellite
 + Wallpaper: gnome-backgrounds, nitrogen
